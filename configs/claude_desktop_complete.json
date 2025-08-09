@@ -1,0 +1,69 @@
+{
+  "mcpServers": {
+    "video_audio_editor": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\Users\\Admin\\my-mcp-\\servers\\video-audio",
+        "run",
+        "python",
+        "server.py"
+      ]
+    },
+    "canva": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote@latest",
+        "https://mcp.canva.com/mcp"
+      ]
+    },
+    "linkedin": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/stickerdaniel/linkedin-mcp-server",
+        "linkedin-mcp-server"
+      ],
+      "env": {
+        "LINKEDIN_COOKIE": "li_at=YOUR_LINKEDIN_COOKIE_HERE"
+      }
+    },
+    "youtube": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "yt-mcp"
+      ],
+      "env": {
+        "YOUTUBE_API_KEY": "YOUR_YOUTUBE_API_KEY_HERE"
+      }
+    },
+    "audio_gemini": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\Users\\Admin\\my-mcp-\\servers\\gemini-audio",
+        "run",
+        "python",
+        "server.py"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "YOUR_GEMINI_API_KEY_HERE"
+      }
+    },
+    "video_gemini": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\Users\\Admin\\my-mcp-\\servers\\gemini-video",
+        "run",
+        "python",
+        "server.py"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "YOUR_GEMINI_API_KEY_HERE"
+      }
+    }
+  }
+}
